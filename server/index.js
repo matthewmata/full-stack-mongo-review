@@ -2,6 +2,8 @@ const express = require('express');
 const routes = require('./routes.js');
 const parser = require('body-parser');
 const path = require('path');
+const db = require('../database/index.js');
+
 const PORT = 3000;
 
 const app = express();
