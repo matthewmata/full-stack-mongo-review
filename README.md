@@ -1,18 +1,16 @@
 # full-stack-review
 
-# fullstack-workshop
-
 #Exercise-1 <br />
-Build out the file structure for your fullstack app and install of the the dependencies that you think you will need.
+In the server directory, build out the the server, routes and controllers for GET, POST, and UPDATE requests (controller functions can contain console.logs to test controller routes). Use Postman to make sure your routes are working.
 
 #Exercise-2 <br />
-After you have built out the stucture of your app, build out your server file. Build out the the routes and controllers for GET, POST, and DELETE requests. Use Postman to make sure your routes are working.
+In your database directory, create a file called index.js and establish a connection to your mongo database using mongoose. Export the connection to the your models.js file and create the schema that you will want to use to store your todolist data.
 
 #Exercise-3 <br />
-In your database folder, create a folder called mongoose and establish a connection to your mongo database using mongoose. Export the connection to the your models.js folder and create the schema that you will want to use to store your todolist data.
+In your database directory, create a file called mongoDBHelpers.js and build out the functionality for GET, POST, and UPDATE requests.
 
 #Exercise-4 <br />
-Use Postman to build out your controller functionality.
+Use Postman to build out and test your controller functionality, using mongoDBHelpers.
 
 #Exercise-5 <br />
 In your client, create a component called App and render it the DOM.
@@ -24,4 +22,4 @@ Build out a class component called List. Inside of the component, build out func
 Inside of your List component, build out functionality that will make a get request to your database and fetch all of the todos from the list. Save those todos to an array on the client side.
 
 #Exercise-8 <br />
-Create a functional component called ListEntry and have it list out the todos stored in the array. Build functionality that will allow the user to delete the todo by clicking on a button.
+Create a functional component called ListEntry and have it list out the todos stored in the array. Build functionality that will allow the user to edit/update the todo by clicking on a button.
