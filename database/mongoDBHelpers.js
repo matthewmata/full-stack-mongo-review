@@ -9,7 +9,6 @@ const getAllTodosHelper = () => {
 };
 
 const updateTodoHelper = (id, newTodo) => {
-  console.log(id, newTodo);
   return TodoList.findOneAndUpdate({ _id: id }, {todo: newTodo});
 };
 
