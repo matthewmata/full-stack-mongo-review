@@ -6,10 +6,26 @@ class List extends Component {
     super(props);
     this.state = {
       todo: '',
+      todos: [],
       listName: 'Todos'
     };
     this.handleInput = this.handleInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.fetchTodos = this.fetchTodos.bind(this);
+  }
+
+  componentDidMount() {
+    this.fetchTodos();
+  }
+
+
+  fetchTodos() {
+    axios
+      .get('/api/todoList')
+      .then(({ data }) =>
+        this.setState({ todos: data }, () => console.log(this.state.todos)) 
+      )
+      .catch(err => console.log(err));
   }
 
   handleInput(e) {
