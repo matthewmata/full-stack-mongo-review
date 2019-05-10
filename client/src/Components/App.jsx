@@ -1,11 +1,6 @@
 import React from 'react';
+import List from './List.jsx';
 
-const App = (props) => {
-  return (
-    <div>
-      Hello from App!!!!!!
-    </div>
-  )
-}
+const App = (props) => <List />
 
 export default App;
